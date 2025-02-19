@@ -3,6 +3,7 @@ import ClassComponent from './components/ClassComponent';
 import FunctionComponent from './components/FunctionComponent';
 import PropsInComponent from './components/PropsInComponent';
 import ComponentInComponent from './components/ComponentInComponent';
+import ConstructorInComponent from './components/ConstructorInComponent';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <FunctionComponent />
       <PropsInComponent property="World" />
       <ComponentInComponent />
+      <ConstructorInComponent />
     </div>
   );
 }
