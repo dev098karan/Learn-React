@@ -5,6 +5,7 @@ import PropsInComponent from './components/PropsInComponent';
 import ComponentInComponent from './components/ComponentInComponent';
 import ConstructorInComponent from './components/ConstructorInComponent';
 import PropsInConstructor from './components/PropsInConstructor';
+import StateObjectInConstructor from './components/StateObjectInConstructor';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ComponentInComponent />
       <ConstructorInComponent />
       <PropsInConstructor property="World" />
+      <StateObjectInConstructor />
     </div>
   );
 }
