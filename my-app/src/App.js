@@ -6,6 +6,7 @@ import ComponentInComponent from './components/ComponentInComponent';
 import ConstructorInComponent from './components/ConstructorInComponent';
 import PropsInConstructor from './components/PropsInConstructor';
 import StateObjectInConstructor from './components/StateObjectInConstructor';
+import MountingPhaseComponentMethods from './components/MountingPhaseComponentMethods';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ConstructorInComponent />
       <PropsInConstructor property="World" />
       <StateObjectInConstructor />
+      <MountingPhaseComponentMethods property="Set using 'getDerivedStateFromProps()' method" />
     </div>
   );
 }
