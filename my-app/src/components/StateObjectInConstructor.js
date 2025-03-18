@@ -7,7 +7,7 @@ class StateObjectInConstructor extends React.Component {
     }
 
     changeColor = () => {
-        if(this.state.myColor == "red") {
+        if(this.state.myColor === "red") {
             this.setState({myColor: "blue"});
             document.getElementById("text").style.color = "blue";
         }
@@ -18,7 +18,7 @@ class StateObjectInConstructor extends React.Component {
     }
 
     changeBackground = () => {
-        if(this.state.myBackground == "yellow") {
+        if(this.state.myBackground === "yellow") {
             this.setState({myBackground: "lavender"});
             document.getElementById("text").style.backgroundColor = "lavender";
         }
@@ -30,13 +30,14 @@ class StateObjectInConstructor extends React.Component {
 
     render() {
         return (
-            <div id="text">
-                <h1>State Object:</h1>        
-                <h2>My Color is {this.state.myColor} and My Background is {this.state.myBackground}.</h2>
-                <div>
-                    State Object's Methods:
-                    <button onClick={this.changeColor}>Change Color</button>
-                    <button onClick={this.changeBackground}>Change Background</button>
+            <div className="Component">
+                <h5 className="Component-Header">State Object In Constructor</h5>
+                <div id="text" className="Component-Content">
+                    <p><strong>State Object:</strong> My Color is <span className="Special">{this.state.myColor}</span> and My Background is <span className="Special">{this.state.myBackground}</span>.</p>        
+                    <p><strong>State Object's Methods:</strong>
+                        <button className="Button" onClick={this.changeColor}>Change Color</button>
+                        <button className="Button" onClick={this.changeBackground}>Change Background</button>
+                    </p>
                 </div>
             </div>
         );

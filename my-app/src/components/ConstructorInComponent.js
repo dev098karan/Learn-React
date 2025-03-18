@@ -6,7 +6,12 @@ class ConstructorInComponent extends React.Component {
         this.state = { property: "World" };
     }
     render() {
-        return <h1>I have a Constructor. It initialized Property = {this.state.property} for me.</h1>
+        return (
+            <div className="Component">
+                <h5 className="Component-Header">Constructor In Component</h5>
+                <p className="Component-Content">I have a Constructor. It initialized Property = <span className="Special">{this.state.property}</span> for me.</p>
+            </div>
+        );
     }
 }
 
