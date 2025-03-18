@@ -29,7 +29,12 @@ class MountingPhaseComponentMethods extends React.Component {
     }
 
     render() {
-        return <h1>I have one Property in State Object:- Property = {this.state.derivedProperty}.</h1>
+        return (
+            <div className="Component">
+                <h5 className="Component-Header">Mounting Phase Component Methods</h5>
+                <p className="Component-Content">I have one Property in State Object:- Property = <span className="Special">{this.state.derivedProperty}</span>.</p>
+            </div>
+        );
     }
 }
 
